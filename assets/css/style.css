@@ -1,38 +1,35 @@
-/* ===CSS Reset=== */
+/* ===css reset=== */
 *{
    margin: 0;
    padding: 0;
    box-sizing: border-box;
 }
+
 /* ===primary css=== */
 body{
-   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 a{
    text-decoration: none;
-   color: #000;
 }
 /* ===Utility=== */
-/* bor-line sono utility da rimuovere___ */
-.bor-line{
-   border: 1px dashed black;
-}
 .container{
    margin: 0 auto;
    max-width: 900px;
 }
 .bg-grey{
-   background-color: lightgray;
+   background-color: #F5F5F5;
 }
-.btn{
+.btn-white{
    background-color: #fff;
-   color: black;
+   color: #000;
    padding: 10px 12px;
    border: none;
    border-radius: 50px;
 }
-.btn:hover{
-   background-color: #ffffffb4;
+.btn-white:hover{
+   background-color: #ffffffb2;
+   cursor: pointer;
 }
 .btn-black{
    background-color: #000;
@@ -42,19 +39,39 @@ a{
    border-radius: 50px;
 }
 .btn-black:hover{
-   background-color: #000000b4;
+   background-color: #000000b2;
+   cursor: pointer;
 }
-
-/* =====Header style===== */
-.header-section{
+.btn-blu{
+   background-color: #3160e0a4;
+   color: #fff;
+   padding: 10px 12px;
+   border: none;
+   border-radius: 50px;
+}
+.btn-blu:hover{
+   background-color: #3160e0cc;
+}
+span.arrow{
+   font-size: 15px;
+   padding-right: 5px;
+}
+span.arrow-w{
+   color: #fff;
+   font-size: 15px;
+   padding-right: 5px;
+}
+/* =====Header Style===== */
+header section{
    background-image: url(/assets/img/jumbo.png);
+   background-position: center;
    background-size: cover;
 }
-/* nav container */
-header .navbar{
-   padding-top: 15px;
+/* ---nav style--- */
+div.navbar{
    display: flex;
    justify-content: space-between;
+   padding: 15px 0;
 }
 .navbar .logo{
    width: 110px;
@@ -63,68 +80,88 @@ header .navbar{
 .navbar nav ul{
    display: flex;
    list-style: none;
+   padding-top: 7px;
 }
-.navbar ul li{
-   padding: 5px 15px;
+.navbar nav ul li{
+   padding: 0 15px;
 }
 .navbar nav ul li a{
+   text-decoration: none;
    color: #fff;
 }
 .navbar nav ul li a:hover{
    text-decoration: underline;
 }
-/* hero container */
-.hero-container{
+/* ---hero style--- */
+.hero-section{
+   margin-top: 70px;
    display: flex;
    justify-content: center;
    align-items: center;
-   margin-top: 70px;
-   color: #fff;
 }
 .hero-content{
    width: 600px;
-   height: 280px; /*Da Rimuovere*/
    text-align: center;
+   color: #fff;
+   margin-bottom: 90px;
 }
 .hero-content h1{
    font-size: 2rem;
-   padding-bottom: 30px;
+   margin-bottom: 30px;
 }
 .hero-content p{
-   font-size: 0.8rem;
-   line-height: 20px;
-   font-weight: 400;
+   font-size: 0.9rem;
+   margin-bottom: 20px;
 }
-.hero-content button{
-   margin: 0 5px;
-}
+
 /* =====Main style===== */
-/* banner section */
+/* ---banner style--- */
+.banner-section{
+   margin: 30px 0;
+}
 .banner-container{
-   padding: 15px;
+   padding: 90px 0;
 }
-.banner{
+.banner-content{
    display: flex;
-   height: 300px; /*Da Rimuovere*/
 }
-.banner .img{
+.banner-content .img{
    width: 70%;
 }
 .img img{
-   width: 500px;
+   max-width: 100%;
 }
-.banner .text{
+.banner-content .text{
    width: 30%;
+   padding: 45px;
 }
 .text h2{
-   font-size: 1.9rem;
+   font-size: 1.8rem;
+   margin-bottom: 15px;
 }
 .text p{
    font-size: 0.9rem;
 }
-.end-banner{
-   background-color: #218B21;
-   height: 500px; /*Da Rimuovere*/
+/* ---end-banner style--- */
+.end-banner-content{
+   text-align: center;
+}
+.end-banner-content h2{
+   font-size: 1.8rem;
+   margin-bottom: 10px;
+}
+.end-banner-content p{
+   font-size: 0.9rem;
+   margin-bottom: 20px;
+}
+.cta h3{
+   padding-top: 50px;
+   background-image: url(/assets/img/stars.svg);
+   background-position:center;
+   background-repeat: no-repeat;
+}
+.cta button{
+   margin-top: 20px;
 }
 
 /* =====Footer style===== */
@@ -132,32 +169,3 @@ footer{
    background-color: #23272B;
 }
 /* footer section */
-footer section{
-   display: flex;
-   height: 300px; /*Da Rimuovere*/
-   padding: 10px 0;
-   border-bottom: 1px solid #bbc0c3;
-}
-footer .footer-title{
-   background-color: #F0817F;
-   height: 280px; /*Da Rimuovere*/
-   width: 30%;
-}
-footer .footer-info{
-   background-color: #20B3AA;
-   display: flex;
-   height: 280px; /*Da Rimuovere*/
-   width: 70%;
-}
-footer .footer-info div{
-   width: 25%;
-   border: 1px dashed black; /*Da Rimuovere*/
-}
-/* footer end */
-.footer-end{
-   display: flex;
-   justify-content: space-between;
-   background-color: #80FFD2;
-   padding: 15px 0;
-   margin-top: 10px;
-}
