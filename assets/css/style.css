@@ -12,6 +12,7 @@ body{
 a{
    text-decoration: none;
 }
+
 /* ===Utility=== */
 .container{
    margin: 0 auto;
@@ -51,6 +52,7 @@ a{
 }
 .btn-blu:hover{
    background-color: #3160e0cc;
+   cursor: pointer;
 }
 span.arrow{
    font-size: 15px;
@@ -61,6 +63,8 @@ span.arrow-w{
    font-size: 15px;
    padding-right: 5px;
 }
+
+
 /* =====Header Style===== */
 header section{
    background-image: url(/assets/img/jumbo.png);
@@ -86,7 +90,6 @@ div.navbar{
    padding: 0 15px;
 }
 .navbar nav ul li a{
-   text-decoration: none;
    color: #fff;
 }
 .navbar nav ul li a:hover{
@@ -120,7 +123,7 @@ div.navbar{
    margin: 30px 0;
 }
 .banner-container{
-   padding: 90px 0;
+   padding: 60px 0;
 }
 .banner-content{
    display: flex;
@@ -148,7 +151,7 @@ div.navbar{
 }
 .end-banner-content h2{
    font-size: 1.8rem;
-   margin-bottom: 10px;
+   margin-bottom: 15px;
 }
 .end-banner-content p{
    font-size: 0.9rem;
@@ -199,6 +202,10 @@ footer .footer-title{
 }
 .footer-title ul li a{
    color: #fff;
+   font-size: 20px;
+}
+.footer-title ul li a:hover{
+  color: #cccccc;
 }
 footer .footer-info{
    width: 70%;
@@ -222,7 +229,6 @@ footer .footer-info{
 .footer-end{
    display: flex;
    justify-content: space-between;
-   padding-top: 15px;
+   padding-top: 30px;
    padding-bottom: 50px;
-   margin-top: 10px;
 }
