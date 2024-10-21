@@ -4,62 +4,100 @@
    padding: 0;
    box-sizing: border-box;
 }
-
-/* ===Utility=== */
-/* ___debug e bor-line sono utility da rimuovere___ */
-.debug{
-   background-color: black;
-   border: 1px solid red;
+/* ===primary css=== */
+body{
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+a{
+   text-decoration: none;
+   color: #000;
+}
+/* ===Utility=== */
+/* bor-line sono utility da rimuovere___ */
 .bor-line{
    border: 1px dashed black;
 }
 .container{
    margin: 0 auto;
-   max-width: 800px;
+   max-width: 900px;
 }
 .bg-grey{
    background-color: lightgray;
 }
+.btn{
+   background-color: #fff;
+   color: black;
+   padding: 10px 12px;
+   border: none;
+   border-radius: 50px;
+}
+.btn:hover{
+   background-color: #ffffffb4;
+}
+.btn-black{
+   background-color: #000;
+   color: #fff;
+   padding: 10px 12px;
+   border: none;
+   border-radius: 50px;
+}
+.btn-black:hover{
+   background-color: #000000b4;
+}
 
 /* =====Header style===== */
-header{
-   background-color: #ADD8E8;
-   padding-top: 10px;
+.header-section{
+   background-image: url(/assets/img/jumbo.png);
+   background-size: cover;
 }
-/* nav section */
+/* nav container */
 header .navbar{
+   padding-top: 15px;
    display: flex;
    justify-content: space-between;
-   background-color: #DAA623;
-   padding: 5px;
+}
+.navbar .logo{
+   width: 110px;
+   height: 30px;
 }
 .navbar nav ul{
    display: flex;
    list-style: none;
 }
 .navbar ul li{
-   padding: 0 10px;
+   padding: 5px 15px;
 }
 .navbar nav ul li a{
-   text-decoration: none;
+   color: #fff;
 }
-/* hero section */
-.hero-section{
-   background-color: #04018c;
-   height: 350px; /*Da Rimuovere*/
+.navbar nav ul li a:hover{
+   text-decoration: underline;
+}
+/* hero container */
+.hero-container{
    display: flex;
    justify-content: center;
    align-items: center;
-   margin-top: 10px;
+   margin-top: 70px;
+   color: #fff;
 }
 .hero-content{
    width: 600px;
    height: 280px; /*Da Rimuovere*/
-   background-color: #EE82EE;
    text-align: center;
 }
-
+.hero-content h1{
+   font-size: 2rem;
+   padding-bottom: 30px;
+}
+.hero-content p{
+   font-size: 0.8rem;
+   line-height: 20px;
+   font-weight: 400;
+}
+.hero-content button{
+   margin: 0 5px;
+}
 /* =====Main style===== */
 /* banner section */
 .banner-container{
@@ -70,12 +108,19 @@ header .navbar{
    height: 300px; /*Da Rimuovere*/
 }
 .banner .img{
-   width: 60%;
-   background-color: #FCC0CA;
+   width: 70%;
+}
+.img img{
+   width: 500px;
 }
 .banner .text{
-   width: 40%;
-   background-color: #1E8FFF;
+   width: 30%;
+}
+.text h2{
+   font-size: 1.9rem;
+}
+.text p{
+   font-size: 0.9rem;
 }
 .end-banner{
    background-color: #218B21;
