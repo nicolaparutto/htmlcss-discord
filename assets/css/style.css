@@ -1,0 +1,118 @@
+/* ===CSS Reset=== */
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+/* ===Utility=== */
+/* ___debug e bor-line sono utility da rimuovere___ */
+.debug{
+   background-color: black;
+   border: 1px solid red;
+}
+.bor-line{
+   border: 1px dashed black;
+}
+.container{
+   margin: 0 auto;
+   max-width: 800px;
+}
+.bg-grey{
+   background-color: lightgray;
+}
+
+/* =====Header style===== */
+header{
+   background-color: #ADD8E8;
+   padding-top: 10px;
+}
+/* nav section */
+header .navbar{
+   display: flex;
+   justify-content: space-between;
+   background-color: #DAA623;
+   padding: 5px;
+}
+.navbar nav ul{
+   display: flex;
+   list-style: none;
+}
+.navbar ul li{
+   padding: 0 10px;
+}
+.navbar nav ul li a{
+   text-decoration: none;
+}
+/* hero section */
+.hero-section{
+   background-color: #04018c;
+   height: 350px; /*Da Rimuovere*/
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 10px;
+}
+.hero-content{
+   width: 600px;
+   height: 280px; /*Da Rimuovere*/
+   background-color: #EE82EE;
+   text-align: center;
+}
+
+/* =====Main style===== */
+/* banner section */
+.banner-container{
+   padding: 15px;
+}
+.banner{
+   display: flex;
+   height: 300px; /*Da Rimuovere*/
+}
+.banner .img{
+   width: 60%;
+   background-color: #FCC0CA;
+}
+.banner .text{
+   width: 40%;
+   background-color: #1E8FFF;
+}
+.end-banner{
+   background-color: #218B21;
+   height: 500px; /*Da Rimuovere*/
+}
+
+/* =====Footer style===== */
+footer{
+   background-color: #23272B;
+}
+/* footer section */
+footer section{
+   display: flex;
+   height: 300px; /*Da Rimuovere*/
+   padding: 10px 0;
+   border-bottom: 1px solid #bbc0c3;
+}
+footer .footer-title{
+   background-color: #F0817F;
+   height: 280px; /*Da Rimuovere*/
+   width: 30%;
+}
+footer .footer-info{
+   background-color: #20B3AA;
+   display: flex;
+   height: 280px; /*Da Rimuovere*/
+   width: 70%;
+}
+footer .footer-info div{
+   width: 25%;
+   border: 1px dashed black; /*Da Rimuovere*/
+}
+/* footer end */
+.footer-end{
+   display: flex;
+   justify-content: space-between;
+   background-color: #80FFD2;
+   padding: 15px 0;
+   margin-top: 10px;
+}
