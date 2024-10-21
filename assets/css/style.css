@@ -73,7 +73,7 @@ div.navbar{
    justify-content: space-between;
    padding: 15px 0;
 }
-.navbar .logo{
+.logo{
    width: 110px;
    height: 30px;
 }
@@ -154,6 +154,9 @@ div.navbar{
    font-size: 0.9rem;
    margin-bottom: 20px;
 }
+.end-banner-content img{
+   max-width: 100%;
+}
 .cta h3{
    padding-top: 50px;
    background-image: url(/assets/img/stars.svg);
@@ -167,5 +170,59 @@ div.navbar{
 /* =====Footer style===== */
 footer{
    background-color: #23272B;
+   color: #fff;
 }
 /* footer section */
+footer section{
+   padding: 50px 0;
+   display: flex;
+   justify-content: space-between;
+   border-bottom: 1px solid #303339;
+}
+footer .footer-title{
+   width: 25%;
+}
+.footer-title h3{
+   color: #7184E0;
+   margin-bottom: 10px;
+}
+.footer-title span{
+   font-size: 0.9rem;
+}
+.footer-title ul{
+   display: flex;
+   margin-top: 10px;
+}
+.footer-title ul li{
+   list-style: none;
+   padding-right: 15px;
+}
+.footer-title ul li a{
+   color: #fff;
+}
+footer .footer-info{
+   width: 70%;
+   display: flex;
+   justify-content: space-between;
+}
+.footer-info span{
+   color: #7184E0;
+}
+.footer-info ul li{
+   list-style: none;
+   margin: 10px 0;
+}
+.footer-info ul li a{
+   color: #fff;
+   font-size: 0.9rem;
+}
+.footer-info ul li a:hover{
+   text-decoration: underline;
+}
+.footer-end{
+   display: flex;
+   justify-content: space-between;
+   padding-top: 15px;
+   padding-bottom: 50px;
+   margin-top: 10px;
+}
